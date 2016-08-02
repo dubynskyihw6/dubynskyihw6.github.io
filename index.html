@@ -1,534 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Zazor</title>
-	<link rel="stylesheet" href="css/reset.css.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
+	<title>Pingbuller</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+ 
 </head>
 <body>
-<!-- Вся страница -->
-<div class="wrapper">
-	<!-- Верхняя линия -->
-		<div class="top-line">
-	 	 <div class="top-line__phone">
-	 		<div class="top-line__phone_img"> <img src="img/phone.png" alt="logo"></div>
-	 		
-	 		<span>(044)123-45-67</span>
-	 		<span>(044)567-89-10</span>
-	 		</div>
-		 
-	 
-	 		<div class="top-line__registr">
-	 			
-	 			<form >
-	 			<i class="fa fa-user" aria-hidden="true"></i>
-	 				<input class="top-line__registr_input" type="text" placeholder="логин" name="username">
-	 				<input class="top-line__registr_input2" type="password" placeholder="пароль" name="password">
-	 				<a class="top-line__registr_a" href="#">вход</a>
-	 				<a class="top-line__registr_a2" href="#">регистрация</a>
-	 				<a class="top-line__registr_a3" href="#">забыли пароль?</a>
-	 			</form>
-			</div>
-	 		<div class="top-line__pict">
-	 			<i class="fa fa-home" aria-hidden="true"></i>
-	 			<i class="fa fa-sitemap" aria-hidden="true"></i>
-	 			<i class="fa fa-envelope-o" aria-hidden="true"></i>
-		 	</div>
-		  </div>
-		
-	
 
-	<!-- Картинка и меню-->
 	<header class="header">
-		<div class="header__slider">
-		<img src="img/zazor.jpg" alt="zazor logo">
-		
-		<div class="header__slider__zazor">
-			<a class="header__slider__zazor_web" href="">zazor.<span class="com">com.ua</span></a>
+		<div class="top-section">
+				<nav class="menu">
+					<div class="menu-logo">
+						<a class="logo-a" href="#"><span class="logo">PINGBULL</span>	
+						<span class="fiolet">ER</span></a>
+						<ul class="menu-ul">
+							<li class="menu-ul__item">
+								<a class="menu-ul__link" href="#">home</a>
+								<a class="menu-ul__link" href="#">about</a>
+								<a class="menu-ul__link" href="#">blog</a>
+								<a  class="menu-ul__link" href="#">procuts</a>
+								<a class="menu-ul__link" href="#">lorem ipsum</a>
+								<a class="menu-ul__link" href="#">dolor sit amet</a>
+							</li>
+						</ul>
+					</div>
+					  <div class="dropdown-menu">
+                        <div class="dropdown-menu-selected-item">
+                            <span class="dropdown-menu-selected-item__link">home</span>
+                        </div>
+                        <ul id="mobile-nav" class="main-nav">
+                            <li class="main-nav-item"><a href="" class="main-nav-item__link">about</a></li>
+                            <li class="main-nav-item"><a href="" class="main-nav-item__link">blog</a></li>
+                            <li class="main-nav-item"><a href="" class="main-nav-item__link">products</a></li>
+                            <li class="main-nav-item"><a href="" class="main-nav-item__link">lorem ipsum</a></li>
+                            <li class="main-nav-item"><a href="" class="main-nav-item__link">dolor sit amet</a></li>
+                        </ul>
+                    </div>
+					</nav>
 			
-			<p>drives you away</p>
+				<div class="slider"> 
+					<div class="content">
+						<div class="slider-content">
+						<h3 class="sl-conth1"> Lorem ipsum dolor </h3>
+						<h4 class="sl-conth2"> sit amet, consectetur adipisicing 	elit.</h4>
+						<p class="sl-cont3"> Vitae exercitationem maxime quasi voluptate labore debitis ea assumenda harum quae rerum, doloribus iusto a cumque, corporis quas dolores beatae, amet aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, delectus aut vitae ipsum fuga, ducimus cumque quasi quisquam, sapiente expedita fugiat.  </p>	
+					</div> 
+						<img class="i-phone" src="img/phone.png" alt="i-phone">
+					<a class="narrow-left" href="#"></a>
+					<a class="narrow-right" href="#"> </a>
+					<div class="button-circle">
+			<ul id="mine--high">    
+			    <li class="mine-ithem--high"><a href="#" class="home--high"></a></li> 
+			    <li class="mine-ithem--high"><a href="#" class="home--high"></a></li> 
+			    <li class="mine-ithem--high"><a href="#" class="home--high"></a></li> 
+			    <li class="mine-ithem--high"><a href="#" class="home--high"></a></li> 
+			 </ul>  
+					</div>	
+				</div>
+			</div>
 		</div>
-		</div>
-		<nav class="header__menu">
-			<ul class="header__menu__left">
-			<li class="header__menu__left_li"><a href="#"> о компании</a></li>
-			<li class="header__menu__left_li"><a href="#">оплата</a></li>
-			<li class="header__menu__left_li"><a href="#">доставка</a></li>
-			<li class="header__menu__left_li"><a href="#">статьи</a></li>
-			<li class="header__menu__left_li"><a href="#">контакты</a></li>
-			</ul>
-			<div class="header__menu__zakaz">
-        		<div class="koshik">
-            	 <img src="img/koshik.png" alt="корзина">
-         		</div>
-     			<div class="header__menu__zakaz-div">
-         			товаров: <span class="koshik_color">0</span>
-     			</div>
-    			 <div class="header__menu__zakaz-div">
-        			 на сумму: <span class="koshik_color">0,00 грн.</span>
-     				</div>
-        		</div>
-		</nav>
+<!-- end of top -->
+		<!-- about -->
+ 		
 	</header>
+	
+	<section class="about">
+        <div class="top-selection">
+            <div class="about-item about-item_key">
+                <h3 class="about-item__title">About our company</h3>
+                <p class="about-item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+                <a href="" class="about-item__link">Read more</a>
+            </div>
+            <div class="about-item about-item_dialog">
+                <h3 class="about-item__title">About our company</h3>
+                <p class="about-item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+                <a href="" class="about-item__link">Read more</a>
+            </div>
 
-	<!-- Формы поиска -->
-		<div class="find">	
-	<!-- 	Поиск левый -->
-			<div class="find__car">
-					<p class="sear"> Поск по автомобилю  
-					</p>
-		           	 	<div class="left__side">
-		            	 <form action="">
-		              	  		<div class="select">
-		                    		<p>Марка <span>авто:</span></p>
-		                    		<select name="" id="">
-		                        		<option value=""></option>
-		                        		<option value="">Авто1</option>
-		                        		<option value="">Авто2</option>
-		                    		</select>
-		                		</div>
-		                		<div class="select">
-		                    		<p>Модель <span>автомобиля:</span></p>
-		                        <select name="" id="">
-		                        	    	<option value=""></option>
-		                            	<option value="">1</option>
-		                            	<option value="">2</option>
-		                        	</select>
-		               		 	</div>
-		               			 <div class="select">
-		                    		<p>Год выпуска <span>автомобиля:</span></p>
-		                        	<select name="" id="">
-		                            	<option value=""></option>
-		                            	<option value="">2015</option>
-		                            	<option value="">2016</option>
-		                        	</select>
-		                        	    		</div>
-		                		<div class="select">
-		                       Комплектация:
-		                       	 <select name="" id="">
-		                            	<option value=""></option>
-		                            	<option value="">1</option>
-		                            	<option value="">2</option>
-		                        	</select>
-		                		</div>
-		            			</form>
-		            		</div>
-		           		<div class="right__side">
-		            			<form action="">
-		               			 <div class="select">
-		                   			 <p>Марка <span>авто:</span></p>
-		                   			 <select name="" id="">
-		                       			 <option value=""></option>
-		                       			 <option value="">Авто1</option>
-		                        			<option value="">Авто2</option>
-		                   			 </select>
-		               			 </div>
-		               			 <div class="select">
-		                   			 <p>Модель <span>автомобиля:</span></p>
-		                       			 <select name="" id="">
-		                            			<option value=""></option>
-		                            			<option value="">1</option>
-		                           			 <option value="">2</option>
-		                        			</select>
-		                			</div>
-		               			 <div class="select">
-		                    			<p>Год выпуска <span>автомобиля:</span></p>
-		                        			<select name="" id="">
-		                            		<option value=""></option>
-		                           			 <option value="">2015</option>
-		                           			 <option value="">2016</option>
-		                        			</select>
-		                			</div>
-		                			<div class="select">
-		                      			 Комплектация:
-		                       			 <select name="" id="">
-		                           			 <option value=""></option>
-		                           			 <option value="">1</option>
-		                           			 <option value="">2</option>
-		                       			 </select>
-		               			 </div>
-		           			</form>
-		          	 		
-		          	 	</div>
-		            	<a href="#">Поиск...</a> 
-		  			</div>
-			<!-- центральный поиск -->
+            <div class="about-item about-item_melody">
+                <h3 class="about-item__title">About our company</h3>
+                <p class="about-item__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+                <a href="" class="about-item__link">Read more</a>
+            </div>
+        </div>
+	</section>
 
-		           			<div class="find__tire">
-		           				 <p class="sear">поиск шин</p>
-		            			<form action="">
-		               			<div class="select">
-		                			<p>Размер:</p>
-		                   
-		                   			 <select name="" id="">
-		                       			 <option value=""></option>
-		                       			 <option value="">12</option>
-		                       			 <option value="">12</option>
-		                   			 </select>
-		                    			/
-		                   			 <select name="" id="">
-		                        			<option value=""></option>
-		                       			 <option value="">12</option>
-		                       			 <option value="">12</option>
-		                   			 </select>  
-		            			</div>
-		           				 <div class="select">
-		               				 <p>R</p>
-		                   
-		                   				 <select name="" id="">
-		                       				 <option value=""></option>
-		                       				 <option value="">12</option>
-		                      				  <option value="">12</option>
-		                   				 </select>
-		                    
-		           				 </div>
-		                		<div class="checkbox">
-		                  		  <p>Сезон:</p>
-		                  		  <div>
-		                  		  <p><label><input type="checkbox" name="" id="">лето</label></p>
-		                  		  <p><label><input type="checkbox" name="" id="">зима</label></p>
-		                 		   <p><label><input type="checkbox" name="" id="">всесез</label></p>
-		                  		 </div> 
-		              		  </div>
-		                 </form>
-		            	<a href="#">Поиск...</a>
-		           		</div>
-		           		<!-- Правый поиск -->
-					<div class="find__disk">
-
-							<p class="sear"> поиск дисков</p>
-            				<div class="left__find">
-								<form action="">
-                   	 				<div class="select">
-                          				<p>Диаметр <span>диска:</span></p>
-                           				 				<select name="" id="">
-                              				  <option value=""></option>
-                              				  <option value="">12</option>
-                              				  <option value="">12</option>
-                           				 </select>
-                   				 	</div>
-                    				<div class="select">
-                         				 <p>Количество <span>крепежных отверстий:</span></p>
-                           				 <select name="" id="">
-                              				  <option value=""></option>
-                               				 <option value="">12</option>
-                               				 <option value="">12</option>
-                           				 </select>
-                   					 </div>
-                   					 <div class="select">
-                           					<p>Диаметр <span>расположения крепежных отверстий:</span></p>
-                           					 <select name="" id="">
-                              					  <option value=""></option>
-                             					   <option value="">12</option>
-                              					  <option value="">12</option>
-                           					 </select>
-                   					 </div>
-               					 </form>
-               			</div>		 
-						 <div class="right__find">
-				               <form  action="">
-				                <div class="right__find_dco">
-				                    <p>ДЦО</p>
-				                    <p><span>(диаметр центрального отверстия):</span></p>
-				                       <select name="" id="">
-				                            <option value=""></option>
-				                            <option value="">12</option>
-				                            <option value="">12</option>
-				                        </select>
-				                </div>
-				                <div>
-				                    <p>ЕТ</p> 
-				                      <p><span>(вылет диска):</span></p>
-				                       <select name="" id="">
-				                            <option value=""></option>
-				                            <option value="">12</option>
-				                            <option value="">12</option>
-				                        </select>
-				                </div>
-				                </form><a href="#">Поиск...</a>
-				          </div>
-
-
-            		</div>
-           
-            	
+<!-- Main Begin -->
+	<section class="main">
+			<div class="main__container">
+				<div class="main-contant left">
+					<h3 class="content blak">PINGBULLER</h3><h3 class="	content pinck">STARTS HERE</h3>
+					<p class="content text" main-container>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione soluta suscipit itaque, aut dolorum a quasi ex, iure vitae similique, reiciendis fugit ad obcaecati cupiditate nulla ut architecto blanditiis maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione soluta suscipit itaque, aut dolorum a quasi ex, iure vitae similique, reiciendis fugit ad obcaecati cupiditate nulla ut architecto blanditiis maiores</p>
+<!-- button-bottom -->
+			
 			</div>
 
 
-
-			<!-- <p>КАТАЛОГ ПРОДУКЦИИ:</p>  -->
-
-			<main class="content">
-				<nav class="content__left-bar">
- 			    	 <div class="left-bar__catalog-head">
-       				 <div class="icon">
-            				<img src="img/icon1.png" alt="">
-       				 </div>
-         				<p>КАТАЛОГ ПРОДУКЦИИ:</p>
-    				 </div>
-   							 <ul>
-   							     <li>
-   							      <div class="left-bar__catalog">
-   							           <div class="icon">
-    							              <img src="img/icon2.png" alt="">
-    							          </div>
-    							           <p>ШИНЫ</p>
-    							     </div>
-     							       <ul>
-     							           <li><a href="">Наименование 1</a></li>
-     							           <li><a href="">Наименование 2</a></li>
-     							           <li><a href="">Наименование 3</a></li>
-     							           <li><a href="">Наименование 4</a></li>
-     							       </ul>
-      							  </li>
-      							  <li>
-       							   <div class="left-bar__catalog">
-      							        <div class="icon">
-      							            <img src="img/icon2.png" alt="">
-      							        </div>
-      							         <p>ДИСКИ</p>
-      							   </div>
-      							      <ul>
-      							          <li><a href="">Наименование 1</a></li>
-              							  <li><a href="">Наименование 2</a></li>
-              							  <li><a href="">Наименование 3</a></li>
-             							   <li><a href="">Наименование 4</a></li>
-           							</ul>
-       							 </li>
-       							 <li>
-       							    <div class="left-bar__catalog">
-       							       <div class="icon">
-      		 					           <img src="img/icon2.png" alt="">
-       		 					      </div>
-       		     					   <p>БОЛТЫ</p>
-       							  </div>
-       		 					    <ul>
-       		  					       <li><a href="">Наименование 1</a></li>
-        							        <li><a href="">Наименование 2</a></li>
-         							       <li><a href="">Наименование 3</a></li>
-             					   <li><a href="">Наименование 4</a></li>
-          					  </ul>
-      					  </li>
-   					 </ul>
-			</nav>
-				
-				<div class="content__central">
-
- 			 	 				 <div class="content_1">
- 			       				      <div>
- 			      				          <p class="text_1">
- 			      				              Goodyear
- 			      				          </p>
- 			      				          <p class="text_2">
- 			      				             Ultra Grip Extreme 
- 			       				         </p>
- 			       				         <div class="wheels">
- 			      				              <img src="img/wheel1.png" alt="">
- 			              								  </div>
- 			      				          <p class="text_3">
- 			      				              90.00 грн
- 			     				           </p>
- 			     				      	</div>
- 			     				       <div>
- 			    				            <p class="text_1">
- 			    				                Nokian
- 			   				             </p>
- 			   				             <p class="text_2">
- 			   				                Hakkapeliitta R 
- 			   				             </p>
- 			    				            <div class="wheels">
- 			    				                <img src="img/wheel2.png" alt="">
- 			    				            </div>
- 			              				  <p class="text_3">
- 			            				        115.00 грн
- 			             				   </p>
- 			           				 </div>
- 			           				 <div>
- 			             				   <p class="text_1">
- 			             				       Hankook
- 			             				   </p>
- 			             				   <p class="text_2">
- 			             				      K 708 155/65 R14 
- 			             				   </p>
- 			             				   <div class="wheels">
- 			             				       <img src="img/wheel3.png" alt="">
- 			             				   </div>
- 			             				   <p class="text_3">
- 			             				       393.00 грн
- 			            				    </p>
- 			           				 </div>
- 			         			 </div>
- 			         			<div class="content_2">
- 			          				     <div>
- 			          				      <p class="text_1">
- 			             				       Goodyear
- 			             				 				  </p>
- 			            				    <p class="text_2">
- 			            				       Ultra Grip Extreme 
- 			            				    </p>
- 			            				    <div class="wheels">
- 			            				        <img src="img/wheel1.png" alt="">
- 			            				    </div>
- 			            				    <p class="text_3">
- 			            				        90.00 грн
- 			            				    </p>
- 			           				 	</div>
- 			       				     <div>
- 			       				         <p class="text_1">
- 			        				            Nokian
- 			        				        </p>
- 			        				        <p class="text_2">
- 			         				          Hakkapeliitta R 
- 			        				        </p>
- 			         				       <div class="wheels">
- 			         				           <img src="img/wheel2.png" alt="">
- 			         				       </div>
- 			        				        <p class="text_3">
- 			        				            115.00 грн
- 			        				        </p>
- 			        				    </div>
- 			       				     <div>
- 			       				         <p class="text_1">
- 			         				           Hankook
- 			         				       </p>
- 			        				        <p class="text_2">
- 			         				          K 708 155/65 R14 
- 			        				        </p>
- 			        				        <div class="wheels">
- 			        				            <img src="img/wheel3.png" alt="">
- 			        				        </div>
- 			        				        <p class="text_3">
- 			       				             393.00 грн
- 			       				         </p>
- 			          				  </div>
- 			          			</div>
- 			          			<div class="content_3">
- 			          				     <div>
- 			           				     <p class="text_1">
- 			            				        Goodyear
- 			            				    </p>
- 			            				    <p class="text_2">
- 			            				       Ultra Grip Extreme 
- 			            				    </p>
- 			             				   <div class="wheels">
- 			             				       <img src="img/wheel1.png" alt="">
- 			            				    </div>
- 			            				    <p class="text_3">
- 			             				       90.00 грн
- 			           				 				    </p>
- 			           					 </div>
- 			           					 <div>
- 			           					     <p class="text_1">
- 			           					         Nokian
- 			            					    </p>
- 			           					     <p class="text_2">
- 			            					       Hakkapeliitta R 
- 			            					    </p>
- 			            					    <div class="wheels">
- 			            					        <img src="img/wheel2.png" alt="">
- 			           					     </div>
- 			           					     <p class="text_3">
- 			            					        115.00 грн
- 			          					      </p>
- 			        					    </div>
- 			        					    <div>
- 			        					        <p class="text_1">
- 			                 						   Hankook
- 			               						 </p>
- 			              						  <p class="text_2">
- 			              						     K 708 155/65 R14 
- 			              						  </p>
- 			              						  <div class="wheels">
- 			              						      <img src="img/wheel3.png" alt="">
- 			             						   </div>
- 			             						   <p class="text_3">
- 			             						       393.00 грн
- 			            						    </p>
- 			          						  </div>
- 			          				 </div>
- 			                    
-			</div>
- 			<nav class="content__right-bar">
- 		              <div class="right-bar__catalog-head"> 
- 		               <div class="icon">
- 		                   <img src="img/icon1.png" alt="">
- 		               </div>
- 		                <p>БРЕНДЫ:</p>
- 		            </div>
- 		            <form action="">
- 		                <ul>
- 		                    <li>
- 		                       <div class="right-bar__catalog">
- 		                     		<div class="icon">
- 		                        		 <img src="img/icon2.png" alt="">
- 		                     		</div>
- 		                     		 <p>ШИНЫ</p>
- 		               		 	</div>
- 		                        <ul class="right-bar__katalog_checbox">
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 1</label></li>
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 2</label></li>
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 3</label></li>
- 		                        </ul>
- 		                    </li>
- 		                    <li>
- 		                       <div class="right-bar__catalog-disc">
- 		                     	<div class="icon">
- 		                       		  <img src="img/icon2.png" alt="">
- 		                    	 </div>
- 		                     	 <p>ДИСКИ</p>
- 		               			</div>
- 		                        <ul>
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 1</label></li>
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 2</label></li>
- 		                            <li><label><input type="checkbox" name="" id=""><span class="check_aside"></span>Бренд 3</label></li>
- 		                        </ul>
- 		                    </li>
- 		                </ul>
- 		                <input type="submit" value="Выбрать">
- 		            </form>
- 		        </nav>
- 			</main>
- 			<!-- cентральное содержимое -->
- 			
-
-
- 		<!-- подвал центральной части -->
- 			<footer class="content__footer">
- 					<img src="img/brend1.png" alt="">
-        			<img src="img/brend2.png" alt="">
-        			<img src="img/brend3.png" alt="">
-        			<img src="img/brend4.png" alt="">
-        			<img src="img/brend5.png" alt="">
-        			<img src="img/brend6.png" alt="">
-        			<img src="img/brend7.png" alt="">
-        			<img src="img/brend8.png" alt="">
- 			</footer>
- 		
- 		<!-- подвал центральной части -->
-
-
- 	<footer class="footer">
- 		<div class="footer-menu">
- 		<ul>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Статьи</a></li>
-            <li><a href="">Контакты</a></li>
-        </ul>
-        <div class="footer_copi">
-           Создание сайта &copy; Global Vision
-       </div>
- 		</div>
- 		
- 	</footer>
- </div>
+				<div class="main-contant right">
+					<h3 class="content blak">RECENT UPDATES</h3>
+					<h4 class="conten-right__post" >Nunc turpis neque feugiat eget</h4>
+					<p class="content text">Posted by admin on March 13 2013 in Recent News</p>
+					<h4 class="conten-right__post" >Nunc turpis neque feugiat eget</h4>
+					<p class="content text">Posted by Admin on March 13 in Category</p>
+					<h4 class="conten-right__post" >Nunc turpis neque feugiat eget</h4>
+					<p class="content text">Posted by Admin on March 2012 in Blog Updates</p>
+					<a href="" class="right__link">READ MORE HERE</a>
+			
+				</div>
+			
+			 <ul id="mine">    
+			    <li class="mine-ithem"><a href="#" class="home"></a></li> 
+			    <li class="mine-ithem"><a href="#" class="home"></a></li> 
+			    <li class="mine-ithem"><a href="#" class="home"></a></li> 
+			    <li class="mine-ithem"><a href="#" class="home"></a></li> 
+			 </ul>  
+			
 		</div>
- 	
- </div>
+	</section>
+<div class="brands">
+	<div class="brends_ithem">
+		<div class="brends__logo one"></div>
+		<div class="brends__logo two"></div>
+		<div class="brends__logo three"></div>
+		<div class="brends__logo four"></div>
+		<div class="brends__logo five"></div>
+		<div class="brends__logo six"></div>
+	</div>
+</div>
+	<div class="comments">
+		<div class="main__container botom">
+			<div class="comments_content lf">
+				<h3 class="content blak">PINGBULL</h3><h3 class="	content pinck">ER</h3>
+					<p class="content text" main-container>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tempore dignissimos ad, est minima veritatis, nihil quia, ipsam atque assumenda amet aperiam corporis. Pariatur minus necessitatibus mollitia, vitae suscipit, repellat.</p>
 
+			</div>
+			<div class="comments_content cntr">
+				<h3 class="content blak">RECENT COMMENTS</h3>
+					<p class="content text" main-container>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est beatae et asperiores error ex dolorum laborum, accusantium maxime, soluta quo impedit animi dolores molestiae ipsam laudantium fugit nulla vero a!</p>
 
+			</div>
+			<div class="comments_content rt">
+				<h3 class="content blak">NEWS CATEGORIES</h3>
+					<p class="content text" main-container>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam consequatur possimus expedita hic porro ducimus, vitae iste impedit voluptate sit et eius? Obcaecati natus non odio vero dolore explicabo laudantium.</p>
+
+			</div>
+		</div>
+	</div>
+	<footer class="bg-footer">
+		<div class="footer">
+			<ul class="menu-ul fot">
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">home</a></li>
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">about</a></li>
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">blog</a></li>
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">products</a></li>
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">lorem ipsum</a></li>
+                <li class="menu-ul foter"><a href="" class="menu-ul__link-down">dolor sit amet</a></li>
+            </ul>
+            <div class="footer-copyright">Designed by <span class="footer-copyright__author">Pingbull AS</span></div>
+		</div>
+	</footer>
+	</div>
 </body>
-</html>
+
