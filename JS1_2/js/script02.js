@@ -1,11 +1,11 @@
-// alert ('Создаем базу имен');
+﻿// alert ('Создаем базу имен');
 var arr = [];
 n = prompt("введите любое имя");
 for (var i = 1; i <= 5; i++) {
 	var n = prompt("введите любое имя");
 	arr.push(n.toUpperCase());
 } 
-alert(arr);
+//alert(arr);
 var oldName = prompt ("Введите имя пользователя");
 var name = oldName.toUpperCase();
 // alert(name); // output name user
