@@ -1,50 +1,23 @@
-﻿// alert ('Создаем базу имен');
+﻿
 var arr = [];
-n = prompt("введите любое имя");
-for (var i = 1; i <= 5; i++) {
-	var n = prompt("введите любое имя");
-	arr.push(n.toUpperCase());
-} 
-//alert(arr);
-var oldName = prompt ("Введите имя пользователя");
-var name = oldName.toUpperCase();
-// alert(name); // output name user
-var newName = find(arr, name);
-function find(arr, name) {
-  for (var i = 0; i < arr.length; i++) {
-  if (name === arr[i]){
-  	newName = name;
-  	alert (oldName+ ', вы успешно вошли.');
-  	return newName;
-	} 
+dataBaseNames();
+/*Creating database of names*/
+var originalName = prompt("Введите имя пользователя");
+var adminName = (originalName.toUpperCase());
+find(arr, adminName);
+function dataBaseNames() {
+  for (var i = 1; i <= 5; i++) {
+    var anyName = prompt("введите любое имя");
+    upperName = anyName.toUpperCase(anyName);
+    arr.push(upperName);    /*Приводим к верхнему регистру, для устрнанения несовпадения*/
+  }
 }
-  if (newName != name){
- 	alert('Ошибка. Вы не авторизованы.');
- }
+function find(arr, adminName) {    /* Поиск нужного имени из созданной базы имен и его сравнение*/
+    for (var i = 0; i < arr.length; i++) {
+        if (adminName === arr[i]) {
+            alert(originalName + ', вы успешно вошли.');
+            return adminName;
+        }
+    }
+     alert('Ошибка. Вы не авторизованы.');
 }
-  
-  
-// for (var i=0; i<arr.length; i++) {
-// document.writeln(arr[i]+"<br>");
-// }
-// alert (arr);
- 
-
-
-// var index = 0;
-// for (index = 0; index < arr.length; ++index) {
-// 	var foundPos = arr.indexOf(name, index);
-// 	alert (foundPos);
-//      if (~arr.indexOf(name)) {// {
-//      	alert ("Добро пожаловать, " +name+ ". Мы тебя ждали");
-//      	break;
-//   }  else { 
-// alert ("Пшел вон");
-// } 
-
- 
- // }  
-
-
-     	
- 
