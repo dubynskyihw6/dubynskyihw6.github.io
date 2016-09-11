@@ -1,23 +1,40 @@
-﻿
-var arr = [];
-dataBaseNames();
-/*Creating database of names*/
-var originalName = prompt("Введите имя пользователя");
-var adminName = (originalName.toUpperCase());
-find(arr, adminName);
-function dataBaseNames() {
-  for (var i = 1; i <= 5; i++) {
-    var anyName = prompt("введите любое имя");
-    upperName = anyName.toUpperCase(anyName);
-    arr.push(upperName);    /*Приводим к верхнему регистру, для устрнанения несовпадения*/
-  }
-}
-function find(arr, adminName) {    /* Поиск нужного имени из созданной базы имен и его сравнение*/
-    for (var i = 0; i < arr.length; i++) {
-        if (adminName === arr[i]) {
+﻿(function createBaseNames() {
+    var baseOfNames = [];
+
+    for (var i = 1; i <= 5; i++) {
+
+        var anyName = prompt("введите любое имя");
+        upperName = anyName.toUpperCase(anyName);
+
+        baseOfNames.push(upperName);
+    }
+
+    // var inputLogin = find();
+
+    function find() { 
+
+        var originalName = prompt("Введите имя пользователя");
+        var adminName = (originalName.toUpperCase());
+
+        for (var i = 0; i < baseOfNames.length; i++) {
+
+            if (adminName === baseOfNames[i]) {
+
+                var presense = true;
+                break;
+            }
+        }
+
+        if (presense == true) {
+
             alert(originalName + ', вы успешно вошли.');
-            return adminName;
+
+        } else {
+
+            alert("Ошибка. Вы не авторизованы.");
         }
     }
-     alert('Ошибка. Вы не авторизованы.');
-}
+
+    find();
+})();
+
