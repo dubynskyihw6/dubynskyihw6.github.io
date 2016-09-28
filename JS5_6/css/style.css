@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: 120px auto;
+    text-align: center;
+    width: 450px;
+    background-color: #333333;
+}
+#mseconds{
+    color: gold;
+}
+#my_timer{
+    font-size: 60px;
+    color: red;
+}
+.btn {
+    display: inline-block;
+    margin: 30px 20px;
+    width: 115px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+.start {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn:hover, .btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+.pause {
+    display: none;
+    color: #fff;
+    background-color: #5cb85c;
+border-color: #4cae4c;
+}
+.continue {
+    display: none;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.clear {
+    /*display: none;*/
+    color: #fff ;
+    background-color: #b83eb0;
+    border-color: #4cae4c;
+}
